@@ -8,6 +8,6 @@
 
 hello_world('Hello World!').
 
-hello_world('Alice', 'Hello Alice!').
-
-hello_world('Bob', 'Hello Bob!').
+hello_world(Name, X) :-
+    string_concat(X0, '!', X),
+    string_concat('Hello ', Name, X0).
