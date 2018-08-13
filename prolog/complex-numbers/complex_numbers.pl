@@ -1,5 +1,5 @@
-real((A,_),_).
-imaginary((_,B),_).
+real((A,_),A).
+imaginary((_,B),B).
 
 conjugate((A,0), (A,0)).
 conjugate((_,B), (_,R)) :- R is B * -1.
